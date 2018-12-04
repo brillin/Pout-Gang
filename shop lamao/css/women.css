@@ -1,0 +1,288 @@
+@charset "UTF-8";
+
+@font-face {
+font-family: "Caviar Dreams";
+src: url("fonts/CaviarDreams.ttf");
+}
+
+.filterDiv {
+  float: left;
+  background-color: ;
+  color: #379683;
+  width: 200px;
+  height: auto;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+/*--------------------------------------------------------------------
+----------------------------------------------------------------------
+--------------------------------------------------------------------*/
+
+body {
+  width: 100%;
+  background: ;
+  margin: 0;
+  font-family: "Caviar Dreams", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-color: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navul > li {
+  display: inline;
+  padding: 0px 20px;
+  font-weight: bold;
+}
+
+.toptop {
+  background-color: #379683;
+  height: 10px;
+}
+
+.logologo {
+  display: inline;
+  width: 100px;
+  padding:0;
+  float: none;
+}
+
+.showplace {
+  margin-left: 50px;
+  margin-right: 50px;
+  border-bottom: 1px solid #D5DCCA;
+}
+
+.description {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.textright {
+  color: #8EE4AF;
+  text-align: right;
+  width: 150px;
+  padding: 10px 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+div.showplace > ul {
+  padding-left: 0;
+}
+
+div.showplace > ul > li {
+  display: inline;
+}
+
+#extra {
+  padding: 20px;
+  padding-bottom: 0px;
+  font-weight: bold;
+}
+
+#nav {
+  display: grid;
+  grid-template-areas:
+  'left left middle middle right right'
+  'middleleft middleleft middlemiddle middlemiddle middleright middleright'
+  'bottomleft bottomleft bottommiddle bottommiddle bottomlost bottomright';
+  height: 90px;
+  border-bottom: #D5DCCA 1px solid;
+}
+
+#left {
+  grid-area: left;
+}
+
+#middle {
+  grid-area: middle;
+}
+
+#right {
+  grid-area: right;
+}
+
+#middleleft {
+  grid-area: middleleft;
+}
+
+#middlemiddle {
+  grid-area: middlemiddle;
+}
+
+#middleright {
+  grid-area: middleright;
+}
+
+#bottomleft {
+  grid-area: bottomleft;
+  text-align: center;
+  color: #8EE4AF;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#bottommiddle {
+  grid-area: bottommiddle;
+  color: #8EE4AF;
+  text-align: center;
+}
+
+#bottomright {
+  grid-area: bottomright;
+  text-align: right;
+}
+
+#topline {
+  width: 80%;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 20% 25% 25% 25%;
+  grid-template-areas:
+  'mainleft mainright mainright mainright';
+  margin-top: 20px;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+#mainleft {
+  grid-area: mainleft;
+  position: sticky;
+}
+
+#sticky {
+  position: sticky;
+  top: 30px;
+}
+
+div#sticky > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+div#sticky > ul > li {
+  margin-bottom: 10px;
+  color: #379683;
+  font-weight: bold;
+}
+
+#mainright {
+  grid-area: mainright;
+}
+
+#menspicture {
+  width: 100%;
+  height: 350px;
+  background-image: url(../img/women.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+  line-height: 350px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+#justslice {
+  border-bottom: #D5DCCA 1px solid;
+  width: 150px;
+  margin: 10px 0px;
+}
+
+#thisone {
+  color: #05386B;
+}
+
+#filter {
+  padding: 30px;
+}
+
+#filterbutton {
+  border-radius: 14px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+#productcount {
+  width: 100px;
+  text-align: right;
+  float: right;
+}
+
+#productcontainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 20px;
+}
+
+#product1 {
+  grid-area: product1;
+}
+
+#product2 {
+  grid-area: product2;
+}
+
+#product3 {
+  grid-area: product3;
+}
+
+#product4 {
+  grid-area: product4;
+}
+
+#product5 {
+  grid-area: product5;
+}
+
+#product6 {
+  grid-area: product6;
+}
+
+#productcontainer > div > a > img {
+  width: 200px;
+  height: 400px;
+}
+
+#productcontainer > div {
+  width: 200px;
+  padding: 0px 50px;
+  padding-bottom: 30px;
+}

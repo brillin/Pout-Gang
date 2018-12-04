@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+@font-face {
+font-family: "Caviar Dreams";
+src: url("fonts/CaviarDreams.ttf");
+}
+
+body {
+  width: 100%;
+  background: #EDF5E1;
+  margin: 0;
+  font-family: "Caviar Dreams", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-color: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logologo {
+  display: inline;
+  width: 100px;
+  padding:0;
+  float: none;
+}
+
+.navul > li {
+  display: inline;
+  padding: 0px 20px;
+  font-weight: bold;
+}
+
+.toptop {
+  background-color: #379683;
+  height: 10px;
+}
+
+.textright {
+  color: #8EE4AF;
+  text-align: right;
+  width: 150px;
+  padding: 10px 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#nav {
+  display: grid;
+  grid-template-areas:
+  'left left middle middle right right'
+  'middleleft middleleft middlemiddle middlemiddle middleright middleright'
+  'bottomleft bottomleft bottommiddle bottommiddle bottomlost bottomright';
+  height: 90px;
+  border-bottom: #D5DCCA 1px solid;
+}
+
+#left {
+  grid-area: left;
+}
+
+#middle {
+  grid-area: middle;
+}
+
+#right {
+  grid-area: right;
+}
+
+#middleleft {
+  grid-area: middleleft;
+}
+
+#middlemiddle {
+  grid-area: middlemiddle;
+}
+
+#middleright {
+  grid-area: middleright;
+}
+
+#bottomleft {
+  grid-area: bottomleft;
+  text-align: center;
+  color: #8EE4AF;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#bottommiddle {
+  grid-area: bottommiddle;
+  color: #8EE4AF;
+  text-align: center;
+}
+
+#bottomright {
+  grid-area: bottomright;
+  text-align: right;
+}
+
+#gridregister {
+  display: grid;
+  grid-template-areas:
+  'registerleft registerright';
+  margin: auto;
+}
+
+#registerleft {
+  grid-area: registerleft;
+  border: 1px solid black;
+  margin: 30px;
+  padding: 30px;
+  height: 160px;
+}
+
+#registerright {
+  grid-area: registerright;
+  border: 1px solid black;
+  margin: 30px;
+  padding: 30px;
+}
+
+.registerinside {
+  display: grid;
+  grid-template-areas:
+  'ir1 ir2'
+  'ir3 ir4'
+  'ir5 ir6'
+  'ir7 ir8'
+  'ir9 ir10';
+  margin: auto;
+}
+
+.registerinside > div {
+  padding: 7.5px;
+}
+
+.ir1 {
+  grid-area: ir1;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.ir2 {
+  grid-area: ir2;
+  text-align: left;
+}
+
+.ir3 {
+  grid-area: ir3;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.ir4 {
+  grid-area: ir4;
+}
+
+.ir5 {
+  grid-area: ir5;
+  text-align: right;
+}
+
+.ir6 {
+  grid-area: ir6;
+}
+
+.ir7 {
+  grid-area: ir7;
+  text-align: right;
+}
+
+.ir8 {
+  grid-area: ir8;
+}
+
+.ir9 {
+  grid-area: ir9;
+  text-align: right;
+}
+
+.ir10 {
+  grid-area: ir10;
+}
+
+.loggain {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.loginbutton {
+  text-align: right;
+}
