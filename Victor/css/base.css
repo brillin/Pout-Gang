@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+@font-face {
+font-family: "Caviar Dreams";
+src: url("fonts/CaviarDreams.ttf");
+}
+
+body {
+  width: 100%;
+  background: #EDF5E1;
+  margin: 0;
+  font-family: "Caviar Dreams", sans-serif;
+  height: 1000px;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-color: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li {
+  display: inline;
+  padding: 0px 20px;
+}
+
+img {
+  margin: ;
+  width: 300px;
+  float: left;
+  padding: 30px;
+  display: inline;
+}
+
+.toptop {
+  background-color: #379683;
+  height: 10px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 200px;
+  height: 35px;
+}
+
+.textright {
+  color: #8EE4AF;
+  text-align: right;
+  width: 150px;
+  padding: 10px 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#nav {
+  display: grid;
+  margin-top: 20px;
+  grid-template-areas:
+  'left left middle middle right right'
+  'middleleft middleleft middlemiddle middlemiddle middlemiddle middleright'
+  'bottomleft bottomleft bottommiddle bottommiddle bottommiddle bottomright';
+  height: 90px;
+  border-bottom: #D5DCCA 1px solid;
+}
+
+#left {
+  grid-area: left;
+}
+
+#middle {
+  grid-area: middle;
+}
+
+#right {
+  grid-area: right;
+}
+
+#middleleft {
+  grid-area: middleleft;
+}
+
+#middlemiddle {
+  grid-area: middlemiddle;
+  text-align: center;
+  color: #8EE4AF;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#middleright {
+  grid-area: middleright;
+}
+
+#bottomleft {
+  grid-area: bottomleft;
+}
+
+#bottommiddle {
+  grid-area: bottommiddle;
+  color: #05386B;
+  text-align: center;
+}
+
+#bottomright {
+  grid-area: bottomright;
+  text-align: right;
+}
+
+#maingrid {
+  display: grid;
+  grid-template-areas:
+  'q e w'
+  'q e w'
+  'q e w';
+  padding: 40px;
+  height: 600px;
+}
+
+#q {
+  grid-area: q;
+  width: 150px;
+}
+
+#e {
+  grid-area: e;
+  width: 150px;
+}
+
+#w {
+  grid-area: w;
+  position: sticky;
+  top: 0px;
+  padding:10px;
+}
+
+#rightaside {
+  position: sticky;
+  top: 40px;
+  padding-top: 30px;
+  font-size: 20px;
+  margin-left: 70px;
+  margin-right: 0px;
+  padding-right: 0px;
+  width: 175px;
+}
+
+#select {
+  width: 200px;
+  height: 35px;
+  background-color: #F0F0F0;
+}
