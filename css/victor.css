@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+@font-face {
+font-family: "Caviar Dreams";
+src: url("fonts/CaviarDreams.ttf");
+}
+
+body {
+  width: 100%;
+  background: ;
+  margin: 0;
+  font-family: "Caviar Dreams", sans-serif;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-color: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  margin: ;
+  width: 300px;
+  float: left;
+  padding: 30px;
+  display: inline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+div.footerdiv > ul > li {
+  margin-bottom: 5px;
+}
+
+div.footerdiv > ul {
+  padding-left: 0;
+}
+
+.logologo {
+  display: inline;
+  width: 100px;
+  padding:0;
+  float: none;
+}
+
+.footerdiv {
+  padding: 0px 20px;
+}
+
+.navul > li {
+  display: inline;
+  padding: 0px 20px;
+  font-weight: bold;
+  color: ;
+}
+
+.textright {
+  color: #8EE4AF;
+  text-align: right;
+  width: 150px;
+  padding: 10px 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.toptop {
+  background-color: #379683;
+  height: 10px;
+}
+
+.middletext {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 13%;
+  color: white;
+}
+
+.faketable {
+  display: table;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+}
+
+.checkout {
+  float: right;
+  width: 10%;
+}
+
+.titlecheckout {
+  text-align: center;
+  border-bottom: 1px black solid;
+}
+
+.price {
+  padding: 10px;
+}
+
+.payment {
+  background-color: gray;
+}
+
+.vertical {
+  height: 100%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.sign {
+  padding: 10px;
+  color: #05386B;
+  background-color: #EDF5E1;
+}
+
+#front {
+  background-image: url("../img/pout1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 620px;
+}
+
+
+#nav {
+  display: grid;
+  grid-template-areas:
+  'left left middle middle right right'
+  'middleleft middleleft middlemiddle middlemiddle middleright middleright'
+  'bottomleft bottomleft bottommiddle bottommiddle bottomlost bottomright';
+  height: 90px;
+  border-bottom: #D5DCCA 1px solid;
+}
+
+#left {
+  grid-area: left;
+}
+
+#middle {
+  grid-area: middle;
+}
+
+#right {
+  grid-area: right;
+}
+
+#middleleft {
+  grid-area: middleleft;
+}
+
+#middlemiddle {
+  grid-area: middlemiddle;
+}
+
+#middleright {
+  grid-area: middleright;
+}
+
+#bottomleft {
+  grid-area: bottomleft;
+  text-align: center;
+  color: #8EE4AF;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#bottommiddle {
+  grid-area: bottommiddle;
+  color: #EDF5E1;
+  text-align: center;
+}
+
+#bottomright {
+  grid-area: bottomright;
+  text-align: right;
+}
+
+#subgrid {
+  display: grid;
+  grid-template-areas:
+  'tl tl tl tr tr tr'
+  'bl bl bm bm br br';
+  height: 650px;
+  padding: 20px;
+  grid-gap: 20px;
+  background-color: #EDF5E1;
+  color: white;
+}
+
+div#subgrid > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+}
+
+#tl {
+  grid-area: tl;
+  background-image: url("../img/sub1_comp.jpg");
+}
+
+
+#tr {
+  grid-area: tr;
+  background-image: url("../img/sub2_comp.jpg");
+}
+
+#bl {
+  grid-area: bl;
+  background-image: url("../img/sub6_comp.jpg");
+}
+
+#bm {
+  grid-area: bm;
+  background-image: url("../img/sub4_comp.jpg");
+}
+
+#br {
+  grid-area: br;
+  background-image: url("../img/sub7_comp.jpg");
+}
+
+#footer {
+  display: grid;
+  grid-template-areas:
+  'f1 f2 f3 f4 f5 f6 f6 f6 f6';
+  padding: 0px 20px;
+  height: 300px;
+  background-color: #EDF5E1;
+  color: green;
+}
+
+#f1 {
+  grid-area: f1;
+}
+
+#f2 {
+  grid-area: f2;
+}
+
+#f3 {
+  grid-area: f3;
+}
+
+#f4 {
+  grid-area: f4;
+}
+
+#f5 {
+  grid-area: f5;
+}
+
+#f6 {
+  grid-area: f6;
+}
